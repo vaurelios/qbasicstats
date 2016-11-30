@@ -143,3 +143,14 @@ def do_central_from_rol(rol):
     print("Q1: {:.2f}".format(Q1))
     print("Q2: {:.2f}".format(Q2))
     print("Q3: {:.2f}".format(Q3))
+
+    ## Variancia / Desvio Padrão
+    sum_var = 0
+    for i in rol:
+        sum_var += math.pow(i - x, 2)
+
+    variancia = sum_var / n
+    dp = math.sqrt(variancia)
+
+    print("Variância: {:.2f}".format(variancia))
+    print("Desvio Padrão: {:.2f}".format(dp))
